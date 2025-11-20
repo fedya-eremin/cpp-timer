@@ -24,32 +24,8 @@ MainWindow::MainWindow(QWidget *parent)
     m_tabWidget->addTab(m_timerWidget.get(), "Timer");
     m_tabWidget->addTab(m_stopwatchWidget.get(), "Stopwatch");
 
-    // Style the tab widget (will be overridden by theme but good as default)
-    m_tabWidget->setStyleSheet(
-        "QTabWidget::pane { "
-        "  border: 1px solid #ccc; "
-        "  top: -1px; "
-        "  background: #f8f8f8; "
-        "} "
-        "QTabBar::tab { "
-        "  background: #e0e0e0; "
-        "  border: 1px solid #ccc; "
-        "  border-bottom-color: #ccc; "
-        "  border-top-left-radius: 4px; "
-        "  border-top-right-radius: 4px; "
-        "  min-width: 80px; "
-        "  padding: 8px; "
-        "  margin: 2px; "
-        "} "
-        "QTabBar::tab:selected, QTabBar::tab:hover { "
-        "  background: #ffffff; "
-        "  border-bottom-color: #ffffff; "
-        "} "
-        "QTabBar::tab:selected { "
-        "  background: #ffffff; "
-        "  font-weight: bold; "
-        "}"
-    );
+    // Don't set specific tab widget stylesheet since theme handles it
+    // The tab widget will inherit styles from the application theme
 
     // Set the central widget
     setCentralWidget(m_tabWidget);

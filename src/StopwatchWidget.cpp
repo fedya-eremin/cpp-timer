@@ -21,12 +21,12 @@ StopwatchWidget::StopwatchWidget(QWidget *parent)
     // Title
     QLabel *titleLabel = new QLabel("Stopwatch");
     titleLabel->setAlignment(Qt::AlignCenter);
-    titleLabel->setStyleSheet("QLabel { font-size: 24px; font-weight: bold; margin: 10px; }");
+    titleLabel->setStyleSheet("QLabel { font-size: 24px; font-weight: bold; margin: 10px; }"); // Keep font styling but let theme handle colors
 
     // Time display
     m_timeLabel = new QLabel("00:00:00.00");
     m_timeLabel->setAlignment(Qt::AlignCenter);
-    m_timeLabel->setStyleSheet("QLabel { font-size: 48px; font-weight: bold; margin: 20px; }");
+    m_timeLabel->setStyleSheet("QLabel { font-size: 48px; font-weight: bold; margin: 20px; }"); // Keep font styling but let theme handle colors
 
     // Control buttons
     QHBoxLayout *buttonLayout = new QHBoxLayout();
@@ -44,7 +44,7 @@ StopwatchWidget::StopwatchWidget(QWidget *parent)
 
     // Laps list title
     QLabel *lapsTitleLabel = new QLabel("Laps:");
-    lapsTitleLabel->setStyleSheet("QLabel { font-size: 16px; font-weight: bold; margin-top: 10px; }");
+    lapsTitleLabel->setStyleSheet("QLabel { font-size: 16px; font-weight: bold; margin-top: 10px; }"); // Keep font styling but let theme handle colors
 
     // Laps list
     m_lapsList = new QListWidget();

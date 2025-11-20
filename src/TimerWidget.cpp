@@ -19,12 +19,12 @@ TimerWidget::TimerWidget(QWidget *parent)
     // Title
     QLabel *titleLabel = new QLabel("Timer");
     titleLabel->setAlignment(Qt::AlignCenter);
-    titleLabel->setStyleSheet("QLabel { font-size: 24px; font-weight: bold; margin: 10px; }");
+    titleLabel->setStyleSheet("QLabel { font-size: 24px; font-weight: bold; margin: 10px; }"); // Keep font styling but let theme handle colors
 
     // Time display
     m_timeLabel = new QLabel("00:00:00");
     m_timeLabel->setAlignment(Qt::AlignCenter);
-    m_timeLabel->setStyleSheet("QLabel { font-size: 48px; font-weight: bold; margin: 20px; }");
+    m_timeLabel->setStyleSheet("QLabel { font-size: 48px; font-weight: bold; margin: 20px; }"); // Keep font styling but let theme handle colors
 
     // Input controls for setting time
     QHBoxLayout *inputLayout = new QHBoxLayout();
